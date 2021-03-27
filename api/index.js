@@ -11,4 +11,4 @@ app.listen(3000, function(){
 });
 */
 
-(process.env.NOW_REGION) ? module.exports = app.listen(PORT);
+(process.env.NOW_REGION) ? module.exports = app : app.listen(PORT);
