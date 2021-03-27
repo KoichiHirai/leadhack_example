@@ -19,9 +19,9 @@ app.post("/api", (req,res) => {
 	res.send(req.body);
 });
 
-
+/*
 app.listen(3000, function(){
 });
+*/
 
-
-//(process.env.NOW_REGION) ? module.exports = app : app.listen(PORT);
+(process.env.NOW_REGION) ? module.exports = app : app.listen(PORT);
