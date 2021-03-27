@@ -10,12 +10,7 @@ app.post("/", (req,res) => {
 	res.send(req.body);
 });
 
-/*
-app.get("/", function(req,res) {
-	res.send("Hello World");
-	// res.json({'msg': "Hello World"})
-});
-*/
+
 
 app.get("/webhook", (req,res) => {
 	res.send("Hello Webhook");
