@@ -6,6 +6,10 @@ app.get("/", function(req,res){
 	res.send("Hello World");
 });
 
+app.get("/webhook", function(req,res){
+	res.send("Hello Webhook");
+});
+
 /*
 app.listen(3000, function(){
 });
