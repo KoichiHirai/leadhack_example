@@ -16,6 +16,7 @@ app.get("/webhook", (req,res) => {
 });
 
 app.post("/api", (req,res) => {
+	console.log(req.body)
 	console.log(req.body.source);
 	console.log(req.body.message);
 	res.send(req.body);
