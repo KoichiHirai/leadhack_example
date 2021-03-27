@@ -5,19 +5,19 @@ const PORT = process.env.PORT||3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 
-app.post("/", (req,res) => {
-	console.log(req.body);
-	res.send(req.body);
+
+app.get("/", function(req,res) {
+    res.send("Hello World");
+    // res.json({'msg': "Hello World"})
 });
-
-
 
 app.get("/webhook", (req,res) => {
 	res.send("Hello Webhook");
 });
 
 app.post("/api", (req,res) => {
-	console.log(req.body);
+	console.log(req.body.source);
+	console.log(req.body.message);
 	res.send(req.body);
 });
 
